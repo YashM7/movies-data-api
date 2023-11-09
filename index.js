@@ -11,7 +11,7 @@ const PORT = 3000;
 app.use(express.json());
  
 // Middleware for CORS POLICY
-var whitelist = [process.env.FRONTEND_URL]
+var whitelist = [process.env.FRONTEND_URL, process.env.PORTFOLIO_URL]
 app.use(
     cors({
         origin: function (origin, callback) {
